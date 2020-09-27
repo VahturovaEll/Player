@@ -1,11 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Плеер</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap">
 </head>
 <body>
-  
+  <main class="container">
+    <div class="current-track">
+      Текущий трек: <span class="current">Выбрать</span>
+    </div>
+    <div class="main-controls">
+      <div class="controls">
+        <button class="pause">Pause</button>
+        <button class="play">Play</button>
+        <button class="stop">Stop</button>
+      </div>
+      <div class="range">
+        <audio src="#" class="audio"></audio>
+        <span class="current-seconds">00:00</span>
+        <span class="duration">00:00</span>
+        <div class="track-range">
+          <div class="range-control"></div>
+        </div>
+      </div>
+    </div>
+    <ul class="track-list">
+      <li>
+        <span class="track-name" data-src="audio/Sofi_Tukker-Swing.mp3">Sofi Tukker "Swing"</span>
+      </li>
+      <li>
+        <span class="track-name" data-src="audio/Sofi_Tukker-Purple_Hat.mp3">Sofi Tukker "Purple Hat"</span>
+      </li>
+      <li>
+        <span class="track-name" data-src="audio/Audiojack-Introspection.mp3">Audiojack "Introspection"</span>
+      </li>
+      <li>
+        <span class="track-name" data-src="audio/Max_Richter-November.mp3">Max Richter "November"</span>
+      </li>
+      <li>
+        <span class="track-name" data-src="audio/Monoplay-Gotta_Go.mp3">Monoplay "Gotta Go"</span>
+      </li>
+      <li>
+        <span class="track-name" data-src="audio/Tim_Green-Shiratani.mp3">Tim Green "Shiratani"</span>
+      </li>
+      <li>
+        <span class="track-name" data-src="audio/Tvorchi-Bonfire.mp3">Tvorchi "Bonfire"</span>
+      </li>
+      <li>
+        <span class="track-name" data-src="audio/Vertigini-The_Shrimps.mp3">Vertigini "The Shrimps"</span>
+      </li>
+      <li>
+        <span class="track-name" data-src="audio/Mapei-Don't_Wait.mp3">Mapei "Don't Wait"</span>
+      </li>
+    </ul>
+  </main>
+  <script src="js/add.js"></script>
 </body>
 </html>
