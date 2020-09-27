@@ -2,7 +2,7 @@ body {
   font-size: 18px;
   font-family: 'Advent Pro', sans-serif;;
   color: #ffffff;
-  background-image: url('/img/music-cover-monstercat.jpg'); 
+  background-image: url('../img/music-cover-monstercat.jpg'); 
   background-position: bottom left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,14 +43,8 @@ padding: 30px 0;
   padding-left: 0;
 }
 
-@media (min-width: 280px) {
-  body {
-    background-position: top center;
-  }  
-}
-
 @media (min-width: 425px) {
   body {
-    background-position: top center;
+    background-position: center center;
   }  
 }
