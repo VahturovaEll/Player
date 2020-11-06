@@ -43,6 +43,10 @@ padding: 30px 0;
   padding-left: 0;
 }
 
+.track-seconds {
+  width: 100%;
+}
+
 @media (min-width: 425px) {
   body {
     background-position: center center;

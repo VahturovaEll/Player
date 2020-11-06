@@ -7,26 +7,29 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap">
 </head>
+
 <body>
-  <main class="container">
+  <main class="container panel">
     <div class="current-track">
-      Текущий трек: <span class="current">Выбрать</span>
+      <span class="current">Выбрать трек</span>
+      <span class="duration">00:00</span>
+      <audio src="#" id="audio"></audio>
     </div>
-    <div class="main-controls">
-      <div class="controls">
-        <button class="pause">Pause</button>
-        <button class="play">Play</button>
-        <button class="stop">Stop</button>
-      </div>
-      <div class="range">
-        <audio src="#" class="audio"></audio>
-        <span class="current-seconds">00:00</span>
-        <span class="duration">00:00</span>
-        <div class="track-range">
-          <div class="range-control"></div>
-        </div>
+
+    <div class="controls">
+      <button class="preview">Prev</button>
+      <button class="play-pause">Play</button>
+      <button class="next">Next</button>
+    </div>
+
+    <div class="range">   
+      <div class="range-control">
+        <label>Текущее время <output class="current-seconds">00:00</output><br>
+          <input class="track-seconds" type="range" min="0.00" max="" step="0.01" value="0.00">
+        </label>
       </div>
     </div>
+
     <ul class="track-list">
       <li>
         <span class="track-name" data-src="audio/Sofi_Tukker-Swing.mp3">Sofi Tukker "Swing"</span>
@@ -56,6 +59,7 @@
         <span class="track-name" data-src="audio/Mapei-Don't_Wait.mp3">Mapei "Don't Wait"</span>
       </li>
     </ul>
+    <button class="button"></button>
   </main>
   <script src="js/add.js"></script>
 </body>
