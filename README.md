@@ -1,1 +1,1 @@
-Ссылка на пеер https://VahturovaEll.github.io/Player/
+Ссылка на плеер https://vahturovaell.github.io/Player/
